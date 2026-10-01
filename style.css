@@ -1,0 +1,11 @@
+/* Extra styles that Tailwind classes don't cover */
+html { scroll-behavior: smooth; }
+.waves { background-image: repeating-radial-gradient(circle at 50% 120%, rgba(126,232,201,.18) 0 2px, transparent 2px 28px); }
+details > summary { list-style: none; }
+details > summary::-webkit-details-marker { display: none; }
+details[open] .chev { transform: rotate(45deg); }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .chev { transition: none !important; } }
+
+/* Scroll reveal (only when JavaScript and motion are available) */
+.js-reveal .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+.js-reveal .reveal.in { opacity: 1; transform: none; }
